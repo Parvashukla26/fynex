@@ -60,26 +60,71 @@ export const pricedeta: {
   ];
 
 
-export const portfolioData: { image: string; title: string }[] = [
-  {
-    image: "/images/portfolio/icon-wallet.svg",
-    title: "Digital Transformation",
-  },
-  {
-    image: "/images/portfolio/icon-vault.svg",
-    title: "Enterprise Security",
-  },
-  {
-    image: "/images/portfolio/icon-mobileapp.svg",
-    title: "Seamless Experiences",
-  },
-];
+export const portfolioData: {
+  image: string;
+  title: string;
+  category: string;
+  year: string;
+}[] = [
+    {
+      image: "/images/portfolio/concept-ai-automation.svg",
+      title: "AI-Powered Business Automation (Concept)",
+      category: "Internal Build • AI & Workflow Automation",
+      year: "2024",
+    },
+    {
+      image: "/images/portfolio/concept-web-platform.svg",
+      title: "Conversion-Focused Business Website (Demo)",
+      category: "Web Design & Development • Growth Ready",
+      year: "2024",
+    },
+    {
+      image: "/images/portfolio/concept-digital-system.svg",
+      title: "Scalable Digital System Architecture (Prototype)",
+      category: "System Design • Operational Efficiency",
+      year: "2024",
+    },
 
-export const upgradeData: { title: string }[] = [
-  { title: "Engineered Perfection" },
-  { title: "Strategic Innovation" },
-  { title: "Reliability First" },
-  { title: "Modern Aesthetics" },
+    // NEW ADDED PROJECTS 👇
+
+    {
+      image: "/images/portfolio/ficlance.svg",
+      title: "FicLance – AI-Driven Freelance Platform",
+      category: "Startup Product • AI & Marketplace Systems",
+      year: "2025",
+    },
+    {
+      image: "/images/portfolio/pranflow.svg",
+      title: "PranFlow – AI Habit Builder System",
+      category: "AI Product • Behavior & Productivity",
+      year: "2025",
+    },
+    {
+      image: "/images/portfolio/ecommerce-brand.svg",
+      title: "E-Commerce Platform for Personal Brand",
+      category: "Commerce System • Brand & Revenue Growth",
+      year: "2025",
+    },
+  ];
+
+
+export const upgradeData: { title: string; description: string }[] = [
+  {
+    title: "Process Optimization",
+    description: "Orchestrating complex enterprise workflows with high-precision neural logic."
+  },
+  {
+    title: "Predictive Intelligence",
+    description: "Synthesizing deep data patterns to forecast and drive strategic growth."
+  },
+  {
+    title: "Infrastructure Scaling",
+    description: "Seamlessly expanding operational capacity through autonomous AI architecture."
+  },
+  {
+    title: "Neural Integration",
+    description: "Bridging legacy systems with modern AI frameworks for unified performance."
+  },
 ];
 
 export const perksData: {

@@ -1,0 +1,16 @@
+<svg width="400" height="500" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#050505;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="500" fill="url(#grad6)" />
+  <g transform="translate(100, 100)">
+    <path d="M20 50 L180 50 L160 250 L40 250 Z" stroke="#c5a059" stroke-width="1" fill="none" opacity="0.4" />
+    <path d="M70 50 Q70 0 100 0 Q130 0 130 50" stroke="#c5a059" stroke-width="1" fill="none" opacity="0.4" />
+    <line x1="20" y1="100" x2="180" y2="100" stroke="#c5a059" stroke-width="0.5" opacity="0.2" />
+    <rect x="70" y="130" width="60" height="80" stroke="#c5a059" stroke-width="0.5" fill="none" opacity="0.3" />
+  </g>
+  <text x="50%" y="90%" text-anchor="middle" fill="#c5a059" font-family="serif" font-style="italic" font-size="12" opacity="0.5">E-COMMERCE BRAND</text>
+</svg>

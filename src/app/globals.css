@@ -111,7 +111,7 @@
   }
 
   body {
-    @apply bg-darkmode text-white;
+    @apply bg-darkmode text-white xl:pl-[80px];
     cursor: none;
   }
 
@@ -119,6 +119,12 @@
   button {
     cursor: none;
   }
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
 }
 
 /* Custom Cursor Styles */
@@ -185,6 +191,7 @@
 
 .text-gradient {
   background: linear-gradient(135deg, #fff 0%, #c5a059 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -234,4 +241,28 @@ section {
 
 .blog-details h3 {
   @apply mb-6 text-2xl font-bold dark:text-white sm:text-[28px] sm:leading-[40px];
+}
+
+/* Custom Themed Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(197, 160, 89, 0.4);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(197, 160, 89, 0.7);
+}
+
+/* Firefox Support */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(197, 160, 89, 0.4) #050505;
 }

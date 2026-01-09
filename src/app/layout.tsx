@@ -6,6 +6,7 @@ import { ThemeProvider } from 'next-themes'
 import ScrollToTop from '@/components/ScrollToTop'
 import Aoscompo from '@/utils/aos'
 import CustomCursor from '@/components/Common/CustomCursor'
+import CreativeSidebar from '@/components/Common/Sidebar'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -32,6 +33,7 @@ export default function RootLayout({
           defaultTheme='dark'>
           <Aoscompo>
             <CustomCursor />
+            <CreativeSidebar />
             <Header />
             {children}
             <Footer />
