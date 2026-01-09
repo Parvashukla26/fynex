@@ -21,7 +21,7 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed top-0 z-50 w-full xl:left-[80px] xl:w-[calc(100%-80px)] transition-all duration-500 ${sticky
+      className={`fixed top-0 z-[100] w-full xl:left-[80px] xl:w-[calc(100%-80px)] transition-all duration-500 ${sticky
         ? 'py-4 bg-darkmode/80 backdrop-blur-xl border-b border-white/5 shadow-2xl'
         : 'py-8 bg-transparent'
         }`}>

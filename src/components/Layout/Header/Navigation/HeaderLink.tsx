@@ -24,17 +24,17 @@ const HeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
     >
       <Link
         href={item.href}
-        className={`text-17 flex font-medium hover:text-primary capitalized  ${
-          path === item.href ? "text-primary " : " text-muted "
-        }`}
+        className={`group relative text-17 flex items-center py-2 px-1 font-medium hover:text-primary transition-all duration-300 capitalize cursor-pointer ${path === item.href ? "text-primary " : " text-muted "
+          }`}
       >
-        {item.label}
+        <span className="relative z-10 pointer-events-auto">{item.label}</span>
         {item.submenu && (
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="1.5em"
             height="1.5em"
             viewBox="0 0 24 24"
+            className="relative z-10 ml-1 pointer-events-none"
           >
             <path
               fill="none"
@@ -57,11 +57,10 @@ const HeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
             <Link
               key={index}
               href={subItem.href}
-              className={`block px-4 py-2   ${
-                path === subItem.href
-                  ? "bg-primary text-white"
-                  : "text-black dark:text-white hover:bg-primary"
-              }`}
+              className={`block px-4 py-2   ${path === subItem.href
+                ? "bg-primary text-white"
+                : "text-black dark:text-white hover:bg-primary"
+                }`}
             >
               {subItem.label}
             </Link>

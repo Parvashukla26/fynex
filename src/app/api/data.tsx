@@ -178,11 +178,79 @@ export const timelineData: {
       position: "md:bottom-0 md:left-0",
     },
     {
-      icon: "/images/timeline/icon-support.svg",
+      icon: "/images/timeline/support.svg",
       title: "Support",
       text: "Deploy the product and ensure full support by us",
       position: "md:bottom-0 md:right-0",
     },
+  ];
+
+export const servicesData: {
+  title: string;
+  description: string;
+  icon: string;
+  category: string;
+}[] = [
+    {
+      title: "AI Strategy & Neural Design",
+      description: "Defining the bridge between complex enterprise needs and autonomous machine intelligence.",
+      icon: "ph:brain-light",
+      category: "Strategic AI"
+    },
+    {
+      title: "Boutique Web Architecture",
+      description: "Crafting pixel-perfect, high-performance digital platforms with quiet luxury aesthetics.",
+      icon: "ph:browser-light",
+      category: "Digital Build"
+    },
+    {
+      title: "Neural Process Automation",
+      description: "Orchestrating complex workflows into self-optimizing, autonomous business engines.",
+      icon: "ph:circuit-ry-light",
+      category: "Automation"
+    },
+    {
+      title: "Data Synthesis & Forecasting",
+      description: "Transforming fragmented information into predictive insights for competitive edge.",
+      icon: "ph:chart-line-up-light",
+      category: "Analytics"
+    },
+    {
+      title: "Identity & Luxury Branding",
+      description: "Developing visual and digital identities that command presence through refined minimalism.",
+      icon: "ph:palette-light",
+      category: "Branding"
+    },
+    {
+      title: "Scalable Infrastructure Design",
+      description: "Building the high-performance foundations that power global digital operations.",
+      icon: "ph:cube-light",
+      category: "Engineering"
+    },
+    {
+      title: "Digital Security Architecture",
+      description: "Protecting elite business assets with advanced, proactive security frameworks.",
+      icon: "ph:shield-check-light",
+      category: "Security"
+    },
+    {
+      title: "Custom LLM Integration",
+      description: "Deploying proprietary language models tailored to unique industry vocabularies.",
+      icon: "ph:chat-centered-dots-light",
+      category: "AI Integration"
+    },
+    {
+      title: "UX Psychology & Design",
+      description: "Engineering interfaces that align with cognitive patterns for effortless interaction.",
+      icon: "ph:users-four-light",
+      category: "Experience"
+    },
+    {
+      title: "Performance Optimization",
+      description: "Fine-tuning existing systems to achieve unprecedented speeds and efficiency.",
+      icon: "ph:gauge-light",
+      category: "Optimization"
+    }
   ];
 
 export const CryptoData: { name: string; price: number }[] = [
