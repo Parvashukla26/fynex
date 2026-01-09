@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect } from 'react';
 
 const defaultShaderSource = `#version 300 es
 precision highp float;
@@ -221,11 +221,18 @@ void main(){gl_Position=position;}`;
             gl.enableVertexAttribArray(position);
             gl.vertexAttribPointer(position, 2, gl.FLOAT, false, 0, 0);
 
+
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             (program as any).resolution = gl.getUniformLocation(program, 'resolution');
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             (program as any).time = gl.getUniformLocation(program, 'time');
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             (program as any).move = gl.getUniformLocation(program, 'move');
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             (program as any).touch = gl.getUniformLocation(program, 'touch');
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             (program as any).pointerCount = gl.getUniformLocation(program, 'pointerCount');
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             (program as any).pointers = gl.getUniformLocation(program, 'pointers');
         }
 
@@ -241,11 +248,18 @@ void main(){gl_Position=position;}`;
             gl.useProgram(program);
             gl.bindBuffer(gl.ARRAY_BUFFER, this.buffer);
 
+
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             gl.uniform2f((program as any).resolution, this.canvas.width, this.canvas.height);
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             gl.uniform1f((program as any).time, now * 1e-3);
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             gl.uniform2f((program as any).move, this.mouseMove[0], this.mouseMove[1]);
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             gl.uniform2f((program as any).touch, this.mouseCoords[0], this.mouseCoords[1]);
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             gl.uniform1i((program as any).pointerCount, this.nbrOfPointers);
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             gl.uniform2fv((program as any).pointers, this.pointerCoords);
             gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
         }
@@ -376,7 +390,9 @@ void main(){gl_Position=position;}`;
             if (rendererRef.current) {
                 rendererRef.current.reset();
             }
+
         };
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return canvasRef;

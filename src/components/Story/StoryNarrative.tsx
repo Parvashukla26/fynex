@@ -1,5 +1,5 @@
 'use client'
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { useRef } from 'react'
 
 const StoryNarrative = () => {
@@ -17,7 +17,7 @@ const StoryNarrative = () => {
             title: "The Silence",
             content: (
                 <>
-                    We retreated into the unknown, paralyzed by the fear of 'what if'. But we discovered a fundamental truth: <span className="text-primary font-bold italic">Knowledge cancels fear.</span> So we stopped building and started understanding. Six months of deep study.
+                    We retreated into the unknown, paralyzed by the fear of &apos;what if&apos;. But we discovered a fundamental truth: <span className="text-primary font-bold italic">Knowledge cancels fear.</span> So we stopped building and started understanding. Six months of deep study.
                 </>
             ),
             align: "right"

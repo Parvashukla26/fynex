@@ -1,7 +1,7 @@
 "use client";
 
 import Hero from "@/components/ui/animated-shader-hero";
-import { Zap, Shield, Rocket } from "lucide-react";
+import { Zap, Rocket } from "lucide-react";
 
 // Demo Component showing how to use the Hero
 const HeroDemo: React.FC = () => {

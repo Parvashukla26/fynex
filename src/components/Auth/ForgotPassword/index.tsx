@@ -11,6 +11,7 @@ const ForgotPassword = () => {
   const [email, setEmail] = useState('')
   const [loader, setLoader] = useState(false)
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleSubmit = async (e: any) => {
     e.preventDefault()
 
@@ -39,6 +40,7 @@ const ForgotPassword = () => {
 
       setEmail('')
       setLoader(false)
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error: any) {
       toast.error(error?.response.data)
       setLoader(false)

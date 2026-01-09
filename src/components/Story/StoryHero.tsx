@@ -26,7 +26,7 @@ const StoryHero = () => {
                     transition={{ duration: 1.5, ease: "easeOut" }}
                     className='text-5xl md:text-8xl font-medium text-white tracking-tighter leading-tight mb-8'
                 >
-                    It didn't start with <br />
+                    It didn&apos;t start with <br />
                     <span className='italic font-serif text-white/20'>success.</span>
                 </motion.h1>
 

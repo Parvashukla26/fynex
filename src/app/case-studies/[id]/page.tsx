@@ -13,8 +13,9 @@ export async function generateStaticParams() {
     }))
 }
 
-export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
-    const study = caseStudiesData.find((p) => p.id.toString() === params.id)
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
+    const { id } = await params
+    const study = caseStudiesData.find((p) => p.id.toString() === id)
     if (!study) return { title: 'Case Study Not Found' }
 
     return {
@@ -23,8 +24,9 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
     }
 }
 
-export default function CaseStudyDetailPage({ params }: { params: { id: string } }) {
-    const study = caseStudiesData.find((p) => p.id.toString() === params.id)
+export default async function CaseStudyDetailPage({ params }: { params: Promise<{ id: string }> }) {
+    const { id } = await params
+    const study = caseStudiesData.find((p) => p.id.toString() === id)
 
     if (!study) {
         notFound()

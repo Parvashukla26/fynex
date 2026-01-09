@@ -1,6 +1,6 @@
 'use client'
 import { upgradeData } from '@/app/api/data'
-import { Icon } from '@iconify/react'
+
 import { motion } from 'framer-motion'
 import { Sparkles, Zap, Shield, Cpu } from 'lucide-react'
 

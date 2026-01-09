@@ -1,5 +1,4 @@
 'use client'
-import Link from 'next/navigation'
 import { useEffect, useState } from 'react'
 import { headerData } from '../Header/Navigation/menuData'
 import Logo from './Logo'

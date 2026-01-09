@@ -60,7 +60,7 @@ const LabExperiments = () => {
                             <div className='absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent' />
 
                             <div className='absolute bottom-0 left-0 w-full p-8'>
-                                <span className='text-primary/60 font-mono text-xs mb-2 block'>{exp.id} // {exp.type}</span>
+                                <span className='text-primary/60 font-mono text-xs mb-2 block'>{exp.id} {'//'} {exp.type}</span>
                                 <h3 className='text-2xl font-bold text-white group-hover:tracking-wider transition-all duration-500'>{exp.name}</h3>
                             </div>
                         </motion.div>

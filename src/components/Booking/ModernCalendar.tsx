@@ -56,7 +56,7 @@ const ModernCalendar: React.FC<ModernCalendarProps> = ({ selectedDate, onSelectD
             {/* Days Grid */}
             <div className='grid grid-cols-7 gap-y-2 gap-x-1'>
                 <AnimatePresence mode='popLayout'>
-                    {days.map((day, idx) => {
+                    {days.map((day) => {
                         const isSelected = selectedDate ? isSameDay(day, selectedDate) : false
                         const isCurrentMonth = isSameMonth(day, currentMonth)
                         const isCurrentDay = isToday(day)

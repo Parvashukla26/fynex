@@ -32,6 +32,7 @@ const ResetPassword = ({ token }: { token: string }) => {
             email: res.data.email,
           })
         }
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
       } catch (error: any) {
         toast.error(error?.response?.data)
         router.push('/forgot-password')
@@ -71,6 +72,7 @@ const ResetPassword = ({ token }: { token: string }) => {
       }
 
       setLoader(false)
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error: any) {
       toast.error(error.response.data)
       setLoader(false)

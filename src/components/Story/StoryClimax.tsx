@@ -22,7 +22,7 @@ const StoryClimax = () => {
                         The Realization.
                     </h2>
                     <p className='text-white/60 text-xl md:text-2xl max-w-3xl mx-auto font-light leading-relaxed'>
-                        We didn't just learn to code. We learned to feel. <br />
+                        We didn&apos;t just learn to code. We learned to feel. <br />
                         Today, that empathy drives the engines of <span className='text-primary font-bold'>10+ elite startups</span>.
                     </p>
                 </motion.div>
