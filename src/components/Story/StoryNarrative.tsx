@@ -15,7 +15,11 @@ const StoryNarrative = () => {
         {
             year: "PHASE_02",
             title: "The Silence",
-            content: "We retreated. Six months of deep study. No shipping. Just absorbing. Psychology, design theory, architectural principles. We deconstructed what made digital experiences feel 'alive'.",
+            content: (
+                <>
+                    We retreated into the unknown, paralyzed by the fear of 'what if'. But we discovered a fundamental truth: <span className="text-primary font-bold italic">Knowledge cancels fear.</span> So we stopped building and started understanding. Six months of deep study.
+                </>
+            ),
             align: "right"
         },
         {
