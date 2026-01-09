@@ -36,7 +36,7 @@ const Work = () => {
 
             <div className='flex flex-col sm:flex-row gap-10 items-center justify-center'>
               <a
-                href='mailto:hello@fynex.studio'
+                href='mailto:parvashukla26@gmail.com'
                 className='group relative flex items-center gap-6 bg-white text-darkmode px-16 py-6 rounded-full font-black text-18 uppercase tracking-widest transition-all duration-500 hover:scale-105'>
                 <span>Send Proposal</span>
                 <Icon icon='ph:paper-plane-tilt-bold' width='20' />

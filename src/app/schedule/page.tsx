@@ -8,6 +8,9 @@ import BookingForm from '@/components/Booking/BookingForm'
 import BookingConfirmation from '@/components/Booking/BookingConfirmation'
 import { motion, AnimatePresence } from 'framer-motion'
 
+// Note: SEO metadata for client components should be added via layout.tsx or a wrapper page component
+// For now, we'll keep this as a client component since it has interactive state
+
 export default function SchedulePage() {
     const [step, setStep] = useState<1 | 2 | 3 | 4>(1) // 1: Date, 2: Time, 3: Details, 4: Success
     const [date, setDate] = useState<Date | undefined>(undefined)

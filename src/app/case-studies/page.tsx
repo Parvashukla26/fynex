@@ -3,8 +3,33 @@ import CaseGrid from '@/components/CaseStudies/CaseGrid'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Case Studies | FYNEX',
-    description: 'Selected elite works defined by impact.',
+    title: 'Case Studies - Real Results & Client Success',
+    description: 'Selected elite works defined by impact. Explore our portfolio of transformative projects and success stories that helped businesses achieve their goals.',
+    keywords: ['case studies', 'portfolio', 'client success', 'project showcase', 'business results', 'success stories', 'digital projects', 'client testimonials'],
+    openGraph: {
+        title: 'Case Studies - Real Results & Client Success | Fynex',
+        description: 'Selected elite works defined by impact. Explore our portfolio of transformative projects and success stories.',
+        url: 'https://fynex.com/case-studies',
+        type: 'website',
+        images: [
+            {
+                url: 'https://fynex.com/og-image.svg',
+                width: 1200,
+                height: 630,
+                alt: 'Fynex Case Studies - Real Results & Client Success',
+            },
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Case Studies - Real Results & Client Success | Fynex',
+        description: 'Selected elite works defined by impact. Explore our portfolio of transformative projects and success stories.',
+        images: ['https://fynex.com/og-image.svg'],
+        creator: '@fynex',
+    },
+    alternates: {
+        canonical: 'https://fynex.com/case-studies',
+    },
 }
 
 export default function CaseStudiesPage() {
