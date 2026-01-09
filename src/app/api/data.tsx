@@ -9,60 +9,56 @@ export const footerlabels: { label: string; herf: string }[] = [
 
 export const pricedeta: {
   title: string;
-  short: string;
   icon: string;
   background: string;
-  price: string;
-  mark: string;
+  value: string;
+  tag: string;
   width: number;
   height: number;
   padding: string;
 }[] = [
     {
-      title: "Web Development",
-      short: "Scaleable Apps",
+      title: "AI-Powered Solutions",
+      value: "Automate decisions and improve business efficiency",
+      tag: "Growth",
       icon: "/images/icons/icon-bag.svg",
-      background: "bg-primary/20",
-      price: "Future-Proof",
-      mark: "Reliable",
+      background: "bg-primary/10",
       width: 24,
       height: 24,
       padding: "px-4 py-3",
     },
     {
-      title: "AI Solutions",
-      short: "Smart Automation",
+      title: "System Automation",
+      value: "Connect tools and processes into one smooth workflow",
+      tag: "Efficiency",
       icon: "/images/icons/icon-bag.svg",
-      background: "bg-primary/20",
-      price: "Next-Gen",
-      mark: "Intelligent",
+      background: "bg-primary/10",
       width: 24,
       height: 24,
       padding: "px-4 py-3",
     },
     {
-      title: "Product Design",
-      short: "Premium UI/UX",
+      title: "Modern Web Platforms",
+      value: "Fast, secure, and scalable products for your users",
+      tag: "Performance",
       icon: "/images/icons/icon-bag.svg",
-      background: "bg-primary/20",
-      price: "Elegant",
-      mark: "Sophisticated",
+      background: "bg-primary/10",
       width: 24,
       height: 24,
       padding: "px-4 py-3",
     },
     {
-      title: "Branding",
-      short: "World-Class Identity",
+      title: "Digital Identity & Security",
+      value: "Protect data, users, and business-critical systems",
+      tag: "Trust",
       icon: "/images/icons/icon-bag.svg",
-      background: "bg-primary/20",
-      price: "Timeless",
-      mark: "Iconic",
+      background: "bg-primary/10",
       width: 24,
       height: 24,
       padding: "px-4 py-3",
     },
   ];
+
 
 export const portfolioData: { image: string; title: string }[] = [
   {
