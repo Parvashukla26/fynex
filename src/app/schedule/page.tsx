@@ -34,7 +34,7 @@ export default function SchedulePage() {
         try {
             const formattedDate = format(date, 'MMMM do, yyyy')
 
-            const response = await fetch('/api/email', {
+            const response = await fetch('/api/booking', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({

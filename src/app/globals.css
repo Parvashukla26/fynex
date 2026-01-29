@@ -44,8 +44,8 @@
   --color-border: rgba(255, 255, 255, 0.1);
   --color-success: #3cd278;
   --color-section: #a0a0a0;
-  --color-darkmode: #0a0a0a;
-  --color-darklight: #141414;
+  --color-darkmode: #1a1a1a;
+  --color-darklight: #252525;
   --color-dark_border: rgba(255, 255, 255, 0.1);
   --color-tealGreen: #fdc700;
   --color-charcoalGray: #1e1e1e;
@@ -112,12 +112,31 @@
 
   body {
     @apply bg-darkmode text-white xl:pl-[80px];
-    cursor: none;
+    cursor: default;
   }
 
   a,
-  button {
-    cursor: none;
+  button,
+  [role="button"],
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"] {
+    cursor: pointer !important;
+  }
+
+  * {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+
+  input,
+  textarea {
+    user-select: text;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
   }
 }
 
@@ -125,35 +144,6 @@
   writing-mode: vertical-rl;
   text-orientation: mixed;
   transform: rotate(180deg);
-}
-
-/* Custom Cursor Styles */
-.cs-cursor_sm {
-  width: 4px;
-  height: 4px;
-  background-color: var(--color-primary);
-  border-radius: 50%;
-  position: fixed;
-  z-index: 10000;
-  pointer-events: none;
-}
-
-.cs-cursor_lg {
-  width: 32px;
-  height: 32px;
-  border: 1px solid rgba(197, 160, 89, 0.2);
-  border-radius: 50%;
-  position: fixed;
-  z-index: 9999;
-  pointer-events: none;
-  transition: width 0.4s cubic-bezier(0.23, 1, 0.32, 1), height 0.4s cubic-bezier(0.23, 1, 0.32, 1), border 0.4s ease;
-}
-
-.cs-cursor_lg.active {
-  width: 50px;
-  height: 50px;
-  border: 1px solid rgba(197, 160, 89, 0.5);
-  background: rgba(197, 160, 89, 0.03);
 }
 
 /* Premium Noise Texture */

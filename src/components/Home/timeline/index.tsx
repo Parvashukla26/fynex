@@ -5,9 +5,9 @@ import { Icon } from '@iconify/react'
 
 const TimeLine = () => {
   return (
-    <section className='py-64 bg-[#050505] relative overflow-hidden' id='story'>
+    <section className='py-64 bg-[#1a1a1a] relative overflow-hidden' id='story'>
       <div className='container px-6 mx-auto relative z-10'>
-        <div className='flex flex-col md:flex-row justify-between items-end mb-40 gap-10'>
+        <div className='flex flex-col md:flex-row justify-between items-end mb-20 gap-10'>
           <div className='max-w-2xl'>
             <div className='flex items-center gap-4 mb-6'>
               <div className='w-12 h-[1px] bg-primary/40'></div>

@@ -29,7 +29,7 @@ const Header: React.FC = () => {
           <Logo />
         </div>
 
-        <nav className='hidden lg:flex items-center gap-12'>
+        <nav className='hidden lg:flex items-center gap-12 cursor-pointer select-none'>
           {headerData.map((item, index) => (
             <HeaderLink key={index} item={item} />
           ))}
@@ -39,7 +39,7 @@ const Header: React.FC = () => {
           <a
             href='#contact'
             className='hidden md:flex items-center gap-3 px-8 py-3 bg-white text-darkmode rounded-full font-bold text-14 uppercase tracking-widest transition-all duration-300 hover:bg-primary hover:scale-105'>
-            <span>Initiate</span>
+            Initiate
             <Icon icon="ph:arrow-right-bold" width="16" />
           </a>
 
@@ -61,13 +61,13 @@ const Header: React.FC = () => {
           <Icon icon="ph:x-bold" width="40" />
         </button>
 
-        <nav className='flex flex-col items-center gap-10'>
+        <nav className='flex flex-col items-center gap-10 cursor-pointer'>
           {headerData.map((item, index) => (
             <a
               key={index}
               href={item.href}
               onClick={() => setNavbarOpen(false)}
-              className='text-36 font-bold text-white uppercase tracking-tighter italic hover:text-primary transition-colors'>
+              className='text-36 font-bold text-white uppercase tracking-tighter italic hover:text-primary transition-colors cursor-pointer select-none'>
               {item.label}
             </a>
           ))}

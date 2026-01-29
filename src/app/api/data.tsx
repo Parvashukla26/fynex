@@ -65,45 +65,45 @@ export const portfolioData: {
   title: string;
   category: string;
   year: string;
+  link?: string;
 }[] = [
     {
-      image: "/images/portfolio/concept-ai-automation.svg",
-      title: "AI-Powered Business Automation (Concept)",
-      category: "Internal Build • AI & Workflow Automation",
+      image: "/images/portfolio/prime-clarity.png",
+      title: "Prime Clarity – Bold Creative Web Studio",
+      category: "Web Design & Development • Creative Branding",
       year: "2024",
+      link: "https://prime-clarity.vercel.app/",
     },
     {
-      image: "/images/portfolio/concept-web-platform.svg",
-      title: "Conversion-Focused Business Website (Demo)",
-      category: "Web Design & Development • Growth Ready",
+      image: "/images/portfolio/aurexis.png",
+      title: "Aurexis Systems – High-Dimensional Wealth Architecture",
+      category: "Financial Systems • Legacy Decoupling",
       year: "2024",
+      link: "https://aurexis.vercel.app/",
     },
     {
-      image: "/images/portfolio/concept-digital-system.svg",
-      title: "Scalable Digital System Architecture (Prototype)",
-      category: "System Design • Operational Efficiency",
+      image: "/images/portfolio/saasify.png",
+      title: "SaaSify – Productivity Infrastructure Platform",
+      category: "SaaS Product • Modern Team Collaboration",
       year: "2024",
+      link: "https://saa-sify-omega.vercel.app/",
     },
 
     // NEW ADDED PROJECTS 👇
 
     {
-      image: "/images/portfolio/ficlance.svg",
-      title: "FicLance – AI-Driven Freelance Platform",
-      category: "Startup Product • AI & Marketplace Systems",
+      image: "/images/portfolio/sovereign.png",
+      title: "Sovereign – Strategic Advisory & Precision Consulting",
+      category: "Advisory Platform • Legacy Building",
       year: "2025",
+      link: "https://sovereign-five.vercel.app/",
     },
     {
-      image: "/images/portfolio/pranflow.svg",
-      title: "PranFlow – AI Habit Builder System",
-      category: "AI Product • Behavior & Productivity",
-      year: "2025",
-    },
-    {
-      image: "/images/portfolio/ecommerce-brand.svg",
-      title: "E-Commerce Platform for Personal Brand",
-      category: "Commerce System • Brand & Revenue Growth",
-      year: "2025",
+      image: "/images/portfolio/graphic-design-portfolio.png",
+      title: "Visual Identity & Brand Architecture",
+      category: "Graphic Design • Creative Direction",
+      year: "2024-2025",
+      link: "https://drive.google.com/file/d/10VGPHV0FHLVV76H3SyXuWlFg6aQnjELu/view?usp=sharing",
     },
   ];
 

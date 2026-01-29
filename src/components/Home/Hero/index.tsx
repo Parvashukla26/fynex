@@ -107,7 +107,7 @@ const Hero = () => {
   const canvasRef = useShaderBackground();
 
   return (
-    <section className='relative min-h-screen flex items-center justify-center pt-32 pb-20 overflow-hidden bg-[#050505]'>
+    <section className='relative min-h-screen flex items-center justify-center pt-32 pb-20 overflow-hidden bg-[#1a1a1a]'>
       {/* Subtle WebGL Background */}
       <canvas
         ref={canvasRef}
@@ -158,7 +158,7 @@ const Hero = () => {
             <a
               href='#contact'
               className='group relative flex items-center gap-4 bg-primary text-darkmode px-14 py-5 rounded-full font-bold text-16 uppercase tracking-widest transition-all duration-500 hover:scale-105 hover:shadow-[0_20px_40px_rgba(197,160,89,0.2)]'>
-              <span>Get Started</span>
+              Get Started
               <Icon icon="ph:arrow-right-bold" className="group-hover:translate-x-1 transition-transform" />
             </a>
 

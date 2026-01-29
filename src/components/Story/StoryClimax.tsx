@@ -29,9 +29,9 @@ const StoryClimax = () => {
 
                 <div className='grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto mb-20'>
                     {[
-                        { label: "Startups Launched", value: "12+" },
-                        { label: "Systems Deployed", value: "450+" },
-                        { label: "User Interactions", value: "1.2M" },
+                        { label: "Startups Launched", value: "1" },
+                        { label: "Systems Deployed", value: "5+" },
+                        { label: "User Interactions", value: "50K+" },
                         { label: "Retention Rate", value: "99%" },
                     ].map((stat, index) => (
                         <motion.div

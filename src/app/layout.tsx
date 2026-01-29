@@ -5,7 +5,6 @@ import Footer from '@/components/Layout/Footer'
 import { ThemeProvider } from 'next-themes'
 import ScrollToTop from '@/components/ScrollToTop'
 import Aoscompo from '@/utils/aos'
-import CustomCursor from '@/components/Common/CustomCursor'
 import CreativeSidebar from '@/components/Common/Sidebar'
 import { siteConfig } from '@/config/site'
 import type { Metadata } from 'next'
@@ -92,7 +91,6 @@ export default function RootLayout({
           enableSystem={true}
           defaultTheme='dark'>
           <Aoscompo>
-            <CustomCursor />
             <CreativeSidebar />
             <Header />
             {children}

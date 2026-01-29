@@ -7,9 +7,9 @@ const Perks = () => {
   const icons = [<Layers key="1" />, <Cpu key="2" />, <Compass key="3" />]
 
   return (
-    <section className='py-48 relative bg-[#050505] overflow-hidden' id='services'>
+    <section className='py-48 relative bg-[#1a1a1a] overflow-hidden' id='services'>
       <div className='container px-6 mx-auto relative z-10'>
-        <div className='max-w-3xl mb-32'>
+        <div className='max-w-3xl mb-20'>
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -39,7 +39,7 @@ const Perks = () => {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className='group relative bg-[#050505] p-16 hover:bg-white/[0.02] transition-colors duration-700 min-h-[400px] flex flex-col justify-between'>
+              className='group relative bg-[#1a1a1a] p-16 hover:bg-white/[0.02] transition-colors duration-700 min-h-[400px] flex flex-col justify-between'>
 
               <div>
                 <div className='text-primary mb-12 opacity-40 group-hover:opacity-100 transition-opacity duration-700'>

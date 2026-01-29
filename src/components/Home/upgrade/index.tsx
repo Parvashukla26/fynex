@@ -8,7 +8,7 @@ const Upgrade = () => {
   const icons = [<Sparkles key="1" />, <Zap key="2" />, <Shield key="3" />, <Cpu key="4" />]
 
   return (
-    <section className='py-32 md:py-56 bg-[#050505] relative' id='ai'>
+    <section className='py-32 md:py-56 bg-[#1a1a1a] relative' id='ai'>
       <div className='container px-6 mx-auto'>
         <div className='grid lg:grid-cols-2 gap-24 md:gap-40 items-center'>
 
@@ -64,7 +64,7 @@ const Upgrade = () => {
             transition={{ duration: 1.2, ease: "easeOut" }}
             className='relative lg:pl-10'>
 
-            <div className='relative aspect-[4/5] bg-[#0A0A0A] rounded-2xl overflow-hidden border border-white/5 shadow-2xl group'>
+            <div className='relative aspect-[4/5] bg-[#252525] rounded-2xl overflow-hidden border border-white/5 shadow-2xl group'>
               {/* Architectural Grid Background */}
               <div className='absolute inset-0 opacity-[0.03]'
                 style={{ backgroundImage: `linear-gradient(rgba(197, 160, 89, 0.2) 1px, transparent 1px), linear-gradient(90deg, rgba(197, 160, 89, 0.2) 1px, transparent 1px)`, backgroundSize: '40px 40px' }}

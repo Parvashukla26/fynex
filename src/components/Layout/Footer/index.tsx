@@ -5,7 +5,7 @@ import { Icon } from '@iconify/react'
 
 const Footer = () => {
   return (
-    <footer className='bg-[#050505] pt-32 pb-16 border-t border-white/5 overflow-hidden'>
+    <footer className='bg-[#1a1a1a] pt-32 pb-16 border-t border-white/5 overflow-hidden'>
       <div className='container px-6 mx-auto'>
         <div className='grid lg:grid-cols-12 gap-20 mb-32'>
 
@@ -48,7 +48,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className='lg:col-span-3'>
+          {/* <div className='lg:col-span-3'>
             <h5 className='text-white text-12 font-bold uppercase tracking-[0.4em] mb-10'>Journal Subscription</h5>
             <p className='text-white/30 text-14 mb-8 font-light'>Insights on digital excellence, delivered monthly.</p>
             <div className='relative'>
@@ -61,7 +61,7 @@ const Footer = () => {
                 <Icon icon="ph:arrow-right-bold" />
               </button>
             </div>
-          </div>
+          </div> */}
 
         </div>
 

@@ -4,7 +4,7 @@ import { Icon } from '@iconify/react'
 
 const Work = () => {
   return (
-    <section className='py-64 bg-[#050505] relative overflow-hidden' id='contact'>
+    <section className='py-64 bg-[#1a1a1a] relative overflow-hidden' id='contact'>
       <div className='container px-6 mx-auto relative z-10'>
         <div className='bg-white/[0.02] border border-white/5 rounded-[80px] p-16 md:p-32 relative overflow-hidden flex flex-col items-center text-center'>
 

@@ -18,23 +18,24 @@ const HeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
 
   return (
     <div
-      className="relative"
+      className="relative cursor-pointer"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
       <Link
         href={item.href}
-        className={`group relative text-17 flex items-center py-2 px-1 font-medium hover:text-primary transition-all duration-300 capitalize cursor-pointer ${path === item.href ? "text-primary " : " text-muted "
+        className={`group relative text-17 flex items-center py-2 px-1 font-medium hover:text-primary transition-all duration-300 capitalize cursor-pointer ${path === item.href ? "text-primary" : "text-muted"
           }`}
+        style={{ userSelect: 'none', cursor: 'pointer' }}
       >
-        <span className="relative z-10 pointer-events-auto">{item.label}</span>
+        {item.label}
         {item.submenu && (
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="1.5em"
             height="1.5em"
             viewBox="0 0 24 24"
-            className="relative z-10 ml-1 pointer-events-none"
+            className="relative z-10 ml-1 pointer-events-none cursor-pointer"
           >
             <path
               fill="none"
