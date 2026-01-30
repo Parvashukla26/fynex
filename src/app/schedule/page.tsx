@@ -71,7 +71,7 @@ export default function SchedulePage() {
                             initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: 20 }}
-                            className='flex flex-col items-center'
+                            className='flex flex-col items-center mt-10'
                         >
                             <ModernCalendar selectedDate={date} onSelectDate={handleDateSelect} />
                             <p className='mt-8 text-white/30 text-xs uppercase tracking-widest'>Step 01 / 03: Select Date</p>
@@ -85,7 +85,7 @@ export default function SchedulePage() {
                             initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: 20 }}
-                            className='flex flex-col items-center'
+                            className='flex flex-col items-center mt-10'
                         >
                             <div className='mb-8 text-center'>
                                 <button onClick={() => setStep(1)} className='text-white/40 hover:text-white text-xs uppercase tracking-widest mb-2 transition-colors'>
@@ -107,7 +107,7 @@ export default function SchedulePage() {
                             initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: 20 }}
-                            className='flex flex-col items-center'
+                            className='flex flex-col items-center mt-10'
                         >
                             <div className='mb-8 text-center'>
                                 <button onClick={() => setStep(2)} className='text-white/40 hover:text-white text-xs uppercase tracking-widest mb-2 transition-colors'>

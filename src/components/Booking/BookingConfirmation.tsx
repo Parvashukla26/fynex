@@ -17,7 +17,7 @@ const BookingConfirmation = () => {
             <h2 className='text-4xl md:text-5xl font-bold text-white mb-6'>Confirmed.</h2>
 
             <p className='text-white/60 text-lg max-w-md mx-auto mb-12 leading-relaxed'>
-                Your meeting has been scheduled. An invitation has been sent to your email with all the details.
+                Your meeting has been scheduled. We will contact you with further details shortly.
             </p>
 
             <Link href="/" className='text-white text-xs uppercase tracking-[0.2em] underline underline-offset-8 hover:text-primary transition-colors'>

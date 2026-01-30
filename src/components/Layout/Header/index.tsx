@@ -37,7 +37,7 @@ const Header: React.FC = () => {
 
         <div className='flex items-center gap-6'>
           <a
-            href='#contact'
+            href='schedule'
             className='hidden md:flex items-center gap-3 px-8 py-3 bg-white text-darkmode rounded-full font-bold text-14 uppercase tracking-widest transition-all duration-300 hover:bg-primary hover:scale-105'>
             Initiate
             <Icon icon="ph:arrow-right-bold" width="16" />

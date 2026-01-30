@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { format, startOfMonth, endOfMonth, eachDayOfInterval, isSameMonth, isSameDay, addMonths, subMonths, isToday, startOfWeek, endOfWeek } from 'date-fns'
+import { format, startOfMonth, endOfMonth, eachDayOfInterval, isSameMonth, isSameDay, addMonths, subMonths, isToday, startOfWeek, endOfWeek, isBefore, startOfDay } from 'date-fns'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
@@ -60,18 +60,21 @@ const ModernCalendar: React.FC<ModernCalendarProps> = ({ selectedDate, onSelectD
                         const isSelected = selectedDate ? isSameDay(day, selectedDate) : false
                         const isCurrentMonth = isSameMonth(day, currentMonth)
                         const isCurrentDay = isToday(day)
+                        const isPastDate = isBefore(startOfDay(day), startOfDay(new Date()))
 
                         return (
                             <motion.button
                                 key={day.toString()}
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
-                                onClick={() => onSelectDate(day)}
+                                onClick={() => !isPastDate && onSelectDate(day)}
+                                disabled={isPastDate}
                                 className={`
                   relative h-10 w-10 md:h-12 md:w-12 mx-auto rounded-full flex items-center justify-center text-sm transition-all duration-300
                   ${!isCurrentMonth ? 'text-white/5' : 'text-white/80 hover:bg-white/5 hover:text-white'}
                   ${isSelected ? 'bg-primary text-black font-bold hover:bg-primary hover:text-black shadow-[0_0_20px_rgba(197,160,89,0.4)]' : ''}
                   ${isCurrentDay && !isSelected ? 'border border-primary/30 text-primary' : ''}
+                  ${isPastDate ? 'opacity-30 cursor-not-allowed hover:bg-transparent' : ''}
                 `}
                             >
                                 {format(day, 'd')}

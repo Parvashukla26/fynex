@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Sign In to Your Account | Fynex',
     description: 'Access your Fynex account. Sign in to manage your projects and collaborate with our team.',
-    url: 'https://fynex.com/signin',
+    url: 'https://fynex-plum.vercel.app/signin',
     type: 'website',
     images: [
       {
-        url: 'https://fynex.com/og-image.svg',
+        url: 'https://fynex-plum.vercel.app/og-image.svg',
         width: 1200,
         height: 630,
         alt: 'Fynex - Sign In to Your Account',
@@ -24,11 +24,11 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Sign In to Your Account | Fynex',
     description: 'Access your Fynex account. Sign in to manage your projects and collaborate with our team.',
-    images: ['https://fynex.com/og-image.svg'],
+    images: ['https://fynex-plum.vercel.app/og-image.svg'],
     creator: '@fynex',
   },
   alternates: {
-    canonical: 'https://fynex.com/signin',
+    canonical: 'https://fynex-plum.vercel.app/signin',
   },
 };
 

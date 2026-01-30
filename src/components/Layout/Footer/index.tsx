@@ -27,24 +27,32 @@ const Footer = () => {
           </div>
 
           <div className='lg:col-span-2'>
-            <h5 className='text-white text-12 font-bold uppercase tracking-[0.4em] mb-10'>Services</h5>
+            <h5 className='text-white text-12 font-bold uppercase tracking-[0.4em] mb-10'>Company</h5>
             <ul className='flex flex-col gap-4'>
-              {['Experience Design', 'Technical Scale', 'Identity Systems', 'Product Strategy'].map((item, i) => (
-                <li key={i}>
-                  <Link href="#" className='text-white/30 hover:text-white transition-colors text-14 font-light'>{item}</Link>
-                </li>
-              ))}
+              <li>
+                <Link href="/services" className='text-white/30 hover:text-white transition-colors text-14 font-light'>Services</Link>
+              </li>
+              <li>
+                <Link href="/story" className='text-white/30 hover:text-white transition-colors text-14 font-light'>Our Story</Link>
+              </li>
+              <li>
+                <Link href="/case-studies" className='text-white/30 hover:text-white transition-colors text-14 font-light'>Case Studies</Link>
+              </li>
+              <li>
+                <Link href="/ai-lab" className='text-white/30 hover:text-white transition-colors text-14 font-light'>AI Labs</Link>
+              </li>
             </ul>
           </div>
 
           <div className='lg:col-span-2'>
-            <h5 className='text-white text-12 font-bold uppercase tracking-[0.4em] mb-10'>Studio</h5>
+            <h5 className='text-white text-12 font-bold uppercase tracking-[0.4em] mb-10'>Connect</h5>
             <ul className='flex flex-col gap-4'>
-              {['The Process', 'Operations', 'Insights', 'Journal'].map((item, i) => (
-                <li key={i}>
-                  <Link href="#" className='text-white/30 hover:text-white transition-colors text-14 font-light'>{item}</Link>
-                </li>
-              ))}
+              <li>
+                <Link href="/schedule" className='text-white/30 hover:text-white transition-colors text-14 font-light'>Schedule</Link>
+              </li>
+              <li>
+                <Link href="/#contact" className='text-white/30 hover:text-white transition-colors text-14 font-light'>Contact</Link>
+              </li>
             </ul>
           </div>
 
@@ -70,9 +78,9 @@ const Footer = () => {
             © 2026 FYNEX STUDIO. ALL RIGHTS RESERVED.
           </p>
           <div className='flex gap-12 text-white/10 text-10 font-bold uppercase tracking-[0.2em]'>
-            <Link href="#" className='hover:text-white transition-colors'>Privacy Policy</Link>
-            <Link href="#" className='hover:text-white transition-colors'>Terms of Service</Link>
-            <Link href="#" className='hover:text-white transition-colors'>Legal Notice</Link>
+            <Link href="/privacy-policy" className='hover:text-white transition-colors'>Privacy Policy</Link>
+            <Link href="/terms-of-service" className='hover:text-white transition-colors'>Terms of Service</Link>
+            <Link href="/legal-notice" className='hover:text-white transition-colors'>Legal Notice</Link>
           </div>
         </div>
       </div>

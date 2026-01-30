@@ -10,11 +10,11 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Our Story - Innovation & Excellence | Fynex',
         description: 'From silence to success. Discover the journey of Fynex and our mission to deliver exceptional digital solutions through innovation.',
-        url: 'https://fynex.com/story',
+        url: 'https://fynex-plum.vercel.app/story',
         type: 'website',
         images: [
             {
-                url: 'https://fynex.com/og-image.svg',
+                url: 'https://fynex-plum.vercel.app/og-image.svg',
                 width: 1200,
                 height: 630,
                 alt: 'Fynex - Our Story of Innovation & Excellence',
@@ -25,11 +25,11 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'Our Story - Innovation & Excellence | Fynex',
         description: 'From silence to success. Discover the journey of Fynex and our mission to deliver exceptional digital solutions.',
-        images: ['https://fynex.com/og-image.svg'],
+        images: ['https://fynex-plum.vercel.app/og-image.svg'],
         creator: '@fynex',
     },
     alternates: {
-        canonical: 'https://fynex.com/story',
+        canonical: 'https://fynex-plum.vercel.app/story',
     },
 }
 
