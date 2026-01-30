@@ -18,9 +18,13 @@ const Footer = () => {
               for the world&apos;s most innovative technical leaders.
             </p>
             <div className='flex gap-8'>
-              {['ph:linkedin-logo-fill', 'ph:twitter-logo-fill', 'ph:instagram-logo-fill'].map((icon, i) => (
-                <a key={i} href="#" className='text-white/20 hover:text-primary transition-colors'>
-                  <Icon icon={icon} width="24" />
+              {[
+                { icon: 'ph:linkedin-logo-fill', href: '#' },
+                { icon: 'ph:twitter-logo-fill', href: '#' },
+                { icon: 'ph:instagram-logo-fill', href: 'https://www.instagram.com/fy.nexx/' }
+              ].map((item, i) => (
+                <a key={i} href={item.href} target="_blank" rel="noopener noreferrer" className='text-white/20 hover:text-primary transition-colors'>
+                  <Icon icon={item.icon} width="24" />
                 </a>
               ))}
             </div>

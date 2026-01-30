@@ -22,7 +22,7 @@ const CreativeSidebar = () => {
     }, [])
 
     const socials = [
-        { icon: 'ph:instagram-logo-light', href: '#' },
+        { icon: 'ph:instagram-logo-light', href: 'https://www.instagram.com/fy.nexx/' },
         { icon: 'ph:linkedin-logo-light', href: '#' },
         { icon: 'ph:x-logo-light', href: '#' },
     ]
