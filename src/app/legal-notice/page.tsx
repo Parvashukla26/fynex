@@ -34,7 +34,7 @@ export default function LegalNoticePage() {
                 <div>
                   <p className='text-white/80 mb-3'><strong className='text-white'>Legal Entity:</strong> Fynex Studio</p>
                   <p className='text-white/80 mb-3'><strong className='text-white'>Business Type:</strong> Digital Agency & Technology Consulting Firm</p>
-                  <p className='text-white/80 mb-3'><strong className='text-white'>Website:</strong> <Link href='/' className='text-primary hover:underline'>https://fynex-plum.vercel.app/</Link></p>
+                  <p className='text-white/80 mb-3'><strong className='text-white'>Website:</strong> <Link href='/' className='text-primary hover:underline'>https://fynex-gray.vercel.app/</Link></p>
                   <p className='text-white/80 mb-3'><strong className='text-white'>Email:</strong> fynexxstudio@gmail.com</p>
                   <p className='text-white/80'><strong className='text-white'>General Inquiries:</strong> fynexxstudio@gmail.com</p>
                 </div>
@@ -44,7 +44,7 @@ export default function LegalNoticePage() {
               <section>
                 <h2 className='text-2xl md:text-3xl text-white font-bold mb-4'>1. Website Operator and Publisher</h2>
                 <p className='text-white/60 leading-relaxed mb-4'>
-                  This website (https://fynex-plum.vercel.app/) is owned, operated, and maintained by Fynex Studio. All content, design, and functionality of this website are the exclusive property of Fynex Studio unless otherwise indicated.
+                  This website (https://fynex-gray.vercel.app/) is owned, operated, and maintained by Fynex Studio. All content, design, and functionality of this website are the exclusive property of Fynex Studio unless otherwise indicated.
                 </p>
                 <p className='text-white/60 leading-relaxed'>
                   Fynex Studio is a specialized digital agency providing AI business automation, digital transformation solutions, and technical consulting services to innovative organizations worldwide.
@@ -311,7 +311,7 @@ export default function LegalNoticePage() {
                   <p className='text-white/80 mb-3'><strong className='text-white'>Fynex Studio</strong></p>
                   <p className='text-white/60 mb-2'><strong className='text-white/80'>Legal Department:</strong> fynexxstudio@gmail.com</p>
                   <p className='text-white/60 mb-2'><strong className='text-white/80'>General Inquiries:</strong> fynexxstudio@gmail.com</p>
-                  <p className='text-white/60 mb-2'><strong className='text-white/80'>Website:</strong> <Link href='/' className='text-primary hover:underline'>https://fynex-plum.vercel.app/</Link></p>
+                  <p className='text-white/60 mb-2'><strong className='text-white/80'>Website:</strong> <Link href='/' className='text-primary hover:underline'>https://fynex-gray.vercel.app/</Link></p>
                   <p className='text-white/60'><strong className='text-white/80'>Consultation:</strong> <Link href='/schedule' className='text-primary hover:underline'>Schedule a Meeting</Link></p>
                 </div>
               </section>

@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://fynex-plum.vercel.app/sitemap.xml
+Sitemap: https://fynex-gray.vercel.app/sitemap.xml

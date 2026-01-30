@@ -7,11 +7,11 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Schedule a Consultation - Book Your Meeting | Fynex',
         description: 'Book a consultation with Fynex. Schedule your meeting to discuss your project and discover how we can transform your business.',
-        url: 'https://fynex-plum.vercel.app/schedule',
+        url: 'https://fynex-gray.vercel.app/schedule',
         type: 'website',
         images: [
             {
-                url: 'https://fynex-plum.vercel.app/og-image.svg',
+                url: 'https://fynex-gray.vercel.app/og-image.svg',
                 width: 1200,
                 height: 630,
                 alt: 'Fynex - Schedule a Consultation',
@@ -22,11 +22,11 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'Schedule a Consultation - Book Your Meeting | Fynex',
         description: 'Book a consultation with Fynex. Schedule your meeting to discuss your project and discover how we can transform your business.',
-        images: ['https://fynex-plum.vercel.app/og-image.svg'],
+        images: ['https://fynex-gray.vercel.app/og-image.svg'],
         creator: '@fynex',
     },
     alternates: {
-        canonical: 'https://fynex-plum.vercel.app/schedule',
+        canonical: 'https://fynex-gray.vercel.app/schedule',
     },
 }
 

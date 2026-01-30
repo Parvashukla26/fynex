@@ -35,7 +35,7 @@ export default function TermsOfServicePage() {
                   These Terms of Service ("Terms") constitute a legally binding agreement between you ("Client," "you," or "your") and Fynex Studio ("Fynex," "we," "us," or "our") governing your access to and use of our website, services, and products.
                 </p>
                 <p className='text-white/60 leading-relaxed mb-4'>
-                  By accessing our website at https://fynex-plum.vercel.app/, engaging our services, or entering into any agreement with us, you acknowledge that you have read, understood, and agree to be bound by these Terms. If you do not agree with these Terms, you must immediately discontinue use of our services.
+                  By accessing our website at https://fynex-gray.vercel.app/, engaging our services, or entering into any agreement with us, you acknowledge that you have read, understood, and agree to be bound by these Terms. If you do not agree with these Terms, you must immediately discontinue use of our services.
                 </p>
                 <p className='text-white/60 leading-relaxed'>
                   These Terms apply to all users, clients, contractors, and others who access or use our services.
@@ -335,7 +335,7 @@ export default function TermsOfServicePage() {
                 <div className='mt-6'>
                   <p className='text-white/80 mb-2'><strong className='text-white'>Fynex Studio</strong></p>
                   <p className='text-white/60 mb-2'>Email: fynexxstudio@gmail.com</p>
-                  <p className='text-white/60 mb-2'>Website: <Link href='/' className='text-primary hover:underline'>https://fynex-plum.vercel.app/</Link></p>
+                  <p className='text-white/60 mb-2'>Website: <Link href='/' className='text-primary hover:underline'>https://fynex-gray.vercel.app/</Link></p>
                   <p className='text-white/60'>Consultation: <Link href='/schedule' className='text-primary hover:underline'>Schedule a Meeting</Link></p>
                 </div>
               </section>

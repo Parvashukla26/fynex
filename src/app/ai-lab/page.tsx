@@ -10,11 +10,11 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'AI Lab - Cutting-Edge AI Solutions | Fynex',
         description: 'Unfair advantage. Engineered. Discover premium AI capabilities including machine learning, automation tools, and intelligent systems.',
-        url: 'https://fynex-plum.vercel.app/ai-lab',
+        url: 'https://fynex-gray.vercel.app/ai-lab',
         type: 'website',
         images: [
             {
-                url: 'https://fynex-plum.vercel.app/og-image.svg',
+                url: 'https://fynex-gray.vercel.app/og-image.svg',
                 width: 1200,
                 height: 630,
                 alt: 'Fynex AI Lab - Cutting-Edge AI Solutions',
@@ -25,11 +25,11 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'AI Lab - Cutting-Edge AI Solutions | Fynex',
         description: 'Unfair advantage. Engineered. Discover premium AI capabilities including machine learning and intelligent systems.',
-        images: ['https://fynex-plum.vercel.app/og-image.svg'],
+        images: ['https://fynex-gray.vercel.app/og-image.svg'],
         creator: '@fynex',
     },
     alternates: {
-        canonical: 'https://fynex-plum.vercel.app/ai-lab',
+        canonical: 'https://fynex-gray.vercel.app/ai-lab',
     },
 }
 

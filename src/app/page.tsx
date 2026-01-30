@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://fynex-plum.vercel.app/og-image.svg',
+        url: 'https://fynex-gray.vercel.app/og-image.svg',
         width: 1200,
         height: 630,
         alt: 'Fynex - AI Business Automation & Digital Solutions',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'AI Business Automation & Digital Solutions | Fynex',
     description: 'Transform your business with AI-powered automation and digital solutions. Fynex delivers cutting-edge technology for scalable growth.',
-    images: ['https://fynex-plum.vercel.app/og-image.svg'],
+    images: ['https://fynex-gray.vercel.app/og-image.svg'],
     creator: '@fynex',
   },
   alternates: {

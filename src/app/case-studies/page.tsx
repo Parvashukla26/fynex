@@ -9,11 +9,11 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Case Studies - Real Results & Client Success | Fynex',
         description: 'Selected elite works defined by impact. Explore our portfolio of transformative projects and success stories.',
-        url: 'https://fynex-plum.vercel.app/case-studies',
+        url: 'https://fynex-gray.vercel.app/case-studies',
         type: 'website',
         images: [
             {
-                url: 'https://fynex-plum.vercel.app/og-image.svg',
+                url: 'https://fynex-gray.vercel.app/og-image.svg',
                 width: 1200,
                 height: 630,
                 alt: 'Fynex Case Studies - Real Results & Client Success',
@@ -24,11 +24,11 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'Case Studies - Real Results & Client Success | Fynex',
         description: 'Selected elite works defined by impact. Explore our portfolio of transformative projects and success stories.',
-        images: ['https://fynex-plum.vercel.app/og-image.svg'],
+        images: ['https://fynex-gray.vercel.app/og-image.svg'],
         creator: '@fynex',
     },
     alternates: {
-        canonical: 'https://fynex-plum.vercel.app/case-studies',
+        canonical: 'https://fynex-gray.vercel.app/case-studies',
     },
 }
 

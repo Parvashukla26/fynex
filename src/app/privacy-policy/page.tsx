@@ -228,7 +228,7 @@ export default function PrivacyPolicyPage() {
                 <div className='mt-6'>
                   <p className='text-white/80 mb-2'><strong className='text-white'>Fynex Studio</strong></p>
                   <p className='text-white/60 mb-2'>Email: fynexxstudio@gmail.com</p>
-                  <p className='text-white/60 mb-2'>Website: <Link href='/' className='text-primary hover:underline'>https://fynex-plum.vercel.app/</Link></p>
+                  <p className='text-white/60 mb-2'>Website: <Link href='/' className='text-primary hover:underline'>https://fynex-gray.vercel.app/</Link></p>
                   <p className='text-white/60'>Consultation: <Link href='/schedule' className='text-primary hover:underline'>Schedule a Meeting</Link></p>
                 </div>
               </section>

@@ -9,11 +9,11 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Premium Digital Services & AI Automation | Fynex',
         description: 'Elite digital services for industry leaders. From AI automation to web development, we deliver premium solutions that drive growth.',
-        url: 'https://fynex-plum.vercel.app/services',
+        url: 'https://fynex-gray.vercel.app/services',
         type: 'website',
         images: [
             {
-                url: 'https://fynex-plum.vercel.app/og-image.svg',
+                url: 'https://fynex-gray.vercel.app/og-image.svg',
                 width: 1200,
                 height: 630,
                 alt: 'Fynex Premium Digital Services & AI Automation',
@@ -24,11 +24,11 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'Premium Digital Services & AI Automation | Fynex',
         description: 'Elite digital services for industry leaders. From AI automation to web development, we deliver premium solutions that drive growth.',
-        images: ['https://fynex-plum.vercel.app/og-image.svg'],
+        images: ['https://fynex-gray.vercel.app/og-image.svg'],
         creator: '@fynex',
     },
     alternates: {
-        canonical: 'https://fynex-plum.vercel.app/services',
+        canonical: 'https://fynex-gray.vercel.app/services',
     },
 }
 
