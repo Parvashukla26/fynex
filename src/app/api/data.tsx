@@ -67,37 +67,58 @@ export const portfolioData: {
   year: string;
   link?: string;
 }[] = [
+    // {
+    //   image: "/images/portfolio/prime-clarity.png",
+    //   title: "Prime Clarity – Bold Creative Web Studio",
+    //   category: "Web Design & Development • Creative Branding",
+    //   year: "2024",
+    //   link: "https://prime-clarity.vercel.app/",
+    // },
+    // {
+    //   image: "/images/portfolio/aurexis.png",
+    //   title: "Aurexis Systems – High-Dimensional Wealth Architecture",
+    //   category: "Financial Systems • Legacy Decoupling",
+    //   year: "2024",
+    //   link: "https://aurexis.vercel.app/",
+    // },
     {
-      image: "/images/portfolio/prime-clarity.png",
-      title: "Prime Clarity – Bold Creative Web Studio",
-      category: "Web Design & Development • Creative Branding",
-      year: "2024",
-      link: "https://prime-clarity.vercel.app/",
-    },
-    {
-      image: "/images/portfolio/aurexis.png",
-      title: "Aurexis Systems – High-Dimensional Wealth Architecture",
-      category: "Financial Systems • Legacy Decoupling",
-      year: "2024",
-      link: "https://aurexis.vercel.app/",
-    },
-    {
-      image: "/images/portfolio/saasify.png",
+      image: "/images/portfolio/SaaSify.png",
       title: "SaaSify – Productivity Infrastructure Platform",
       category: "SaaS Product • Modern Team Collaboration",
       year: "2024",
       link: "https://saa-sify-omega.vercel.app/",
     },
+    {
+      image: "/images/portfolio/DKC.png",
+      title: "Designer Kids Club – Luxury Kidswear, Smarter & Sustainable",
+      category: "E-commerce / Sustainable Fashion Marketplace (Kidswear)",
+      year: "2024",
+      link: "https://designerkidsclub.com/",
+    },
+    {
+      image: "/images/portfolio/Lmneez.png",
+      title: "Lmneez – Natural Lemon-Based Beverages & Flavours",
+      category: "Food & Beverage / Natural Drinks Brand / FMCG",
+      year: "2024",
+      link: "https://www.sreydhafoods.com/",
+    },
+    {
+      image: "/images/portfolio/FINsathi.png",
+      title: "FINsathi – Tax, Legal & Financial Compliance Solutions",
+      category: "Financial Services / Compliance Technology",
+      year: "2024",
+      link: "https://www.finsathi.com/",
+    },
 
     // NEW ADDED PROJECTS 👇
 
-    {
-      image: "/images/portfolio/sovereign.png",
-      title: "Sovereign – Strategic Advisory & Precision Consulting",
-      category: "Advisory Platform • Legacy Building",
-      year: "2025",
-      link: "https://sovereign-five.vercel.app/",
-    },
+    // {
+    //   image: "/images/portfolio/sovereign.png",
+    //   title: "Sovereign – Strategic Advisory & Precision Consulting",
+    //   category: "Advisory Platform • Legacy Building",
+    //   year: "2025",
+    //   link: "https://sovereign-five.vercel.app/",
+    // },
     {
       image: "/images/portfolio/graphic-design-portfolio.png",
       title: "Visual Identity & Brand Architecture",
