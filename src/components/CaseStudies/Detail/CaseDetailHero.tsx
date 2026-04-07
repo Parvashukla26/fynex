@@ -10,36 +10,57 @@ interface CaseDetailHeroProps {
 
 const CaseDetailHero: React.FC<CaseDetailHeroProps> = ({ title, category, image }) => {
     return (
-        <section className='relative h-[85vh] min-h-[600px] w-full overflow-hidden bg-[#050505]'>
-            {/* Background Image */}
-            <div className='absolute inset-0'>
+        <section className='bg-[#050505] pt-32 md:pt-48'>
+            {/* Header / Title Section */}
+            <div className='container px-6 mx-auto mb-20 md:mb-32 text-center'>
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+                    className='flex flex-col items-center'
+                >
+                    <div className='flex items-center gap-6 mb-12 opacity-30'>
+                        <div className='w-12 h-[1px] bg-white'></div>
+                        <span className='text-white text-[10px] font-black uppercase tracking-[0.6em] font-mono'>
+                            {category}
+                        </span>
+                        <div className='w-12 h-[1px] bg-white'></div>
+                    </div>
+
+                    <h1 className='text-6xl md:text-[140px] font-medium text-white tracking-[-0.05em] leading-[0.8] mb-12 uppercase' 
+                        style={{ fontFamily: 'var(--font-after), serif' }}>
+                        {title}
+                    </h1>
+
+                    <div className='flex items-center gap-12 text-white/20 font-mono text-[9px] uppercase tracking-[0.5em]'>
+                        <div className='flex items-center gap-3'>
+                            <span className='w-1 h-1 rounded-full bg-primary/60'></span>
+                            <span>Operation // Confirmed</span>
+                        </div>
+                        <div className='flex items-center gap-3'>
+                            <span className='w-1 h-1 rounded-full bg-primary/60'></span>
+                            <span>Aesthetic // Sovereign</span>
+                        </div>
+                    </div>
+                </motion.div>
+            </div>
+
+            {/* Cinematic Separated Landscape Image */}
+            <motion.div 
+                initial={{ opacity: 0, clipPath: 'inset(10% 0% 10% 0%)' }}
+                whileInView={{ opacity: 1, clipPath: 'inset(0% 0% 0% 0%)' }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
+                className='relative w-full aspect-[21/9] md:h-[80vh] overflow-hidden border-t border-b border-white/5 bg-[#101010]'
+            >
                 <Image
                     src={image}
                     alt={title}
                     fill
-                    className='object-cover opacity-60'
+                    className='object-cover transition-all duration-1500'
                     priority
                 />
-                <div className='absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/20' />
-            </div>
-
-            <div className='container px-6 mx-auto h-full flex flex-col justify-end relative z-10 pb-20'>
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1 }}
-                >
-                    <span className='inline-block mb-6 px-4 py-2 border border-white/20 rounded-full bg-black/20 backdrop-blur-md'>
-                        <span className='text-primary text-xs font-mono uppercase tracking-[0.2em] font-bold'>
-                            {category}
-                        </span>
-                    </span>
-
-                    <h1 className='text-5xl md:text-8xl font-medium text-white tracking-tighter leading-[0.95] max-w-4xl'>
-                        {title}
-                    </h1>
-                </motion.div>
-            </div>
+            </motion.div>
         </section>
     )
 }

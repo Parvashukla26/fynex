@@ -90,6 +90,12 @@
 
   --blur-220: 220px;
   --blur-400: 400px;
+
+  /* Custom Fonts */
+  --font-oglaso: 'Oglaso', serif;
+  --font-duffish: 'Duffish', sans-serif;
+  --font-gragio: 'Gragio', serif;
+  --font-after: 'After', sans-serif;
 }
 
 /*

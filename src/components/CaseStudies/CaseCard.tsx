@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 interface CaseCardProps {
     item: {
-        id: number
+        id: string
         title: string
         category: string
         image: string

@@ -61,68 +61,50 @@ export const pricedeta: {
 
 
 export const portfolioData: {
+  id: string;
   image: string;
   title: string;
   category: string;
   year: string;
   link?: string;
 }[] = [
-    // {
-    //   image: "/images/portfolio/prime-clarity.png",
-    //   title: "Prime Clarity – Bold Creative Web Studio",
-    //   category: "Web Design & Development • Creative Branding",
-    //   year: "2024",
-    //   link: "https://prime-clarity.vercel.app/",
-    // },
-    // {
-    //   image: "/images/portfolio/aurexis.png",
-    //   title: "Aurexis Systems – High-Dimensional Wealth Architecture",
-    //   category: "Financial Systems • Legacy Decoupling",
-    //   year: "2024",
-    //   link: "https://aurexis.vercel.app/",
-    // },
     {
-      image: "/images/portfolio/SaaSify.png",
-      title: "SaaSify – Productivity Infrastructure Platform",
-      category: "SaaS Product • Modern Team Collaboration",
+      id: "saasify",
+      image: "/images/portfolio/saasify.png",
+      title: "SaaSify - Productivity Infrastructure Platform",
+      category: "SaaS Product / Modern Team Collaboration",
       year: "2024",
       link: "https://saa-sify-omega.vercel.app/",
     },
     {
+      id: "dkc",
       image: "/images/portfolio/DKC.png",
-      title: "Designer Kids Club – Luxury Kidswear, Smarter & Sustainable",
-      category: "E-commerce / Sustainable Fashion Marketplace (Kidswear)",
+      title: "Designer Kids Club - Luxury Kidswear, Smarter & Sustainable",
+      category: "E-commerce / Sustainable Fashion Marketplace",
       year: "2024",
       link: "https://designerkidsclub.com/",
     },
     {
+      id: "lmneez",
       image: "/images/portfolio/Lmneez.png",
-      title: "Lmneez – Natural Lemon-Based Beverages & Flavours",
-      category: "Food & Beverage / Natural Drinks Brand / FMCG",
+      title: "Lmneez - Natural Lemon-Based Beverages & Flavours",
+      category: "Food & Beverage / Natural Drinks Brand",
       year: "2024",
       link: "https://www.sreydhafoods.com/",
     },
     {
+      id: "finsathi",
       image: "/images/portfolio/FINsathi.png",
-      title: "FINsathi – Tax, Legal & Financial Compliance Solutions",
+      title: "FINsathi - Tax, Legal & Financial Compliance Solutions",
       category: "Financial Services / Compliance Technology",
       year: "2024",
       link: "https://www.finsathi.com/",
     },
-
-    // NEW ADDED PROJECTS 👇
-
-    // {
-    //   image: "/images/portfolio/sovereign.png",
-    //   title: "Sovereign – Strategic Advisory & Precision Consulting",
-    //   category: "Advisory Platform • Legacy Building",
-    //   year: "2025",
-    //   link: "https://sovereign-five.vercel.app/",
-    // },
     {
+      id: "visual-identity",
       image: "/images/portfolio/graphic-design-portfolio.png",
       title: "Visual Identity & Brand Architecture",
-      category: "Graphic Design • Creative Direction",
+      category: "Graphic Design / Creative Direction",
       year: "2024-2025",
       link: "https://drive.google.com/file/d/10VGPHV0FHLVV76H3SyXuWlFg6aQnjELu/view?usp=sharing",
     },
@@ -275,7 +257,7 @@ export const servicesData: {
   ];
 
 export const caseStudiesData: {
-  id: number;
+  id: string;
   title: string;
   category: string;
   image: string;
@@ -285,101 +267,112 @@ export const caseStudiesData: {
   year: string;
   location: string;
   services: string[];
-  challenge: string;
-  solution: string;
-  gallery: string[];
+  details: string[];
+  iconSet: string;
+  liveLink?: string;
 }[] = [
     {
-      id: 1,
-      title: "VANTAGE CAPITAL",
-      category: "Fintech Interface",
-      image: "/images/portfolio/case-vantage.svg",
-      description: "A high-frequency trading platform reimagined with calm data visualization.",
-      stats: "+45% User Retention",
-      client: "Vantage Capital Group",
-      year: "2025",
-      location: "London, UK",
-      services: ["UX Strategy", "UI Design", "Frontend Architecture"],
-      challenge: "Traders were overwhelmed by cognitive load. The existing platform was powerful but chaotic, leading to decision fatigue and errors during high-volatility market sessions.",
-      solution: "We introduced a 'Zen Mode' architecture. By reducing visual noise and prioritizing data through intelligent hierarchy, we created an interface that induces calm focus. Key metrics pulse gently; secondary data recedes until needed.",
-      gallery: ["/images/portfolio/portfolio-01.jpg", "/images/portfolio/portfolio-02.jpg", "/images/portfolio/portfolio-03.jpg"]
-    },
-    {
-      id: 2,
-      title: "AURA BOUTIQUE",
-      category: "E-Commerce",
-      image: "/images/portfolio/case-aura.svg",
-      description: "An immersive digital storefront for a luxury fashion house.",
-      stats: "2.5x Conversion Rate",
-      client: "Aura Maison",
+      id: "saasify",
+      title: "SAASIFY PLATFORM",
+      category: "Productivity SaaS",
+      image: "/images/portfolio/saasify.png",
+      description: "A centralized productivity infrastructure engineered for high-performance team collaboration.",
+      stats: "+60% Workflow Velocity",
+      client: "SaaSify Co.",
       year: "2024",
-      location: "Paris, France",
-      services: ["Brand Identity", "E-Commerce Dev", "3D Modeling"],
-      challenge: "The brand's online presence felt static and disconnected from their sensory in-store experience. They needed a digital flagship that felt as tactile and exclusive as their physical ateliers.",
-      solution: "We built a WebGL-powered experience where fabric textures can be felt through the screen. Smooth, cinematic transitions mimic the flow of silk. The checkout process is invisible until the very last moment.",
-      gallery: ["/images/portfolio/portfolio-02.jpg", "/images/portfolio/portfolio-03.jpg", "/images/portfolio/portfolio-01.jpg"]
-    },
-    {
-      id: 3,
-      title: "NEBULA SYSTEMS",
-      category: "SaaS Dashboard",
-      image: "/images/portfolio/case-nebula.svg",
-      description: "Complex analytics simplified into a singular, intuitive neural command center.",
-      stats: "Red Dot Award",
-      client: "Nebula AI",
-      year: "2025",
       location: "San Francisco, USA",
-      services: ["Product Design", "Data Viz", "Design System"],
-      challenge: "Nebula's AI was generating petabytes of insights, but users couldn't parse the data. The interface was a wall of numbers that alienated non-technical stakeholders.",
-      solution: "We designed a 'living' dashboard. Instead of static charts, we used organic, fluid visualizations that behave like biological systems. Anomalies ripple. Growth blooms. It turns dry data into an intuitive narrative.",
-      gallery: ["/images/portfolio/portfolio-03.jpg", "/images/portfolio/portfolio-01.jpg", "/images/portfolio/portfolio-02.jpg"]
+      services: ["Platform Architecture", "UX Strategy", "AI Integration"],
+      details: [
+        "SaaSify represents a paradigm shift in team synchronization. We engineered a neural-pathway interface that dramatically reduces 'Digital Friction,' allowing cross-functional teams to coexist within a single, high-fidelity environment.",
+        "The project focused on the absolute reduction of tool-switching overhead. By architecting a modular 'Block-System,' we enabled users to construct their own workspace protocols without compromising global data integrity or performance.",
+        "A sophisticated AI-integration layer was deployed to interpret team velocity. This allows for real-time workflow adjustments, ensuring that bottlenecking is identified and resolved dynamically before it impacts project momentum.",
+        "The resulting platform has redefined productivity for our elite partners. With a 60% increase in measurable output velocity, SaaSify proves that architectural clarity is the ultimate driver of high-performance outcome."
+      ],
+      iconSet: "SaaS",
+      liveLink: "https://saa-sify-omega.vercel.app/"
     },
     {
-      id: 4,
-      title: "KRONOS REAL ESTATE",
-      category: "Property Tech",
-      image: "/images/portfolio/case-kronos.svg",
-      description: "Virtual property tours integrated with real-time market intelligence.",
-      stats: "$150M+ Sold",
-      client: "Kronos Developments",
+      id: "dkc",
+      title: "DESIGNER KIDS CLUB",
+      category: "Luxury E-Commerce",
+      image: "/images/portfolio/DKC.png",
+      description: "A sustainable luxury fashion marketplace redefining high-end kidswear through digital elegance.",
+      stats: "2.4x Conversion Growth",
+      client: "DKC Global",
       year: "2024",
-      location: "Dubai, UAE",
-      services: ["VR Integration", "Web Platform", "Mobile App"],
-      challenge: "Ultra-high-net-worth buyers needed to experience properties remotely without losing the sense of scale and luxury. Standard 360 viewers felt cheap and clunky.",
-      solution: "We created a proprietary cinematic tour engine. High-fidelity rendering meets real-time market data overlay. Buyers can not only walk the halls but see the investment potential projected on the walls.",
-      gallery: ["/images/portfolio/portfolio-04.jpg", "/images/portfolio/portfolio-05.jpg", "/images/portfolio/portfolio-06.jpg"]
+      location: "London, UK",
+      services: ["Brand Strategy", "E-Commerce Build", "Logistics UI"],
+      details: [
+        "Designer Kids Club was architected to transcend standard retail expectations. We utilized a high-contrast museum-grid system that treats every garment as an archival piece, elevating the digital selection process to an art form.",
+        "The strategy prioritized brand value over transactional noise. By eliminating traditional discount-led marketing and focusing on 'The Art of Selection,' we successfully attracted a tier of parents who value curation above all else.",
+        "Logistics and UX were seamlessly unified within a clean checkout protocol. We removed every non-essential field, resulting in a 2.4x growth in checkout completion while maintaining an exclusive, boutique feel.",
+        "DKC now stands as a benchmark for luxury children's e-commerce. It demonstrates that a minimal, high-fidelity aesthetic can drive massive commercial growth by establishing an unrivaled sense of trust and permanence."
+      ],
+      iconSet: "ECom",
+      liveLink: "https://designerkidsclub.com/"
     },
     {
-      id: 5,
-      title: "LUMEN HEALTH",
-      category: "Medical AI",
-      image: "/images/portfolio/case-lumen.svg",
-      description: "Patient diagnostics dashboard powered by predictive machine learning.",
-      stats: "HIPAA Compliant",
-      client: "Lumen BioLabs",
-      year: "2025",
-      location: "Zurich, Switzerland",
-      services: ["Healthcare UX", "Secure Architecture", "Mobile"],
-      challenge: "Doctors were spending 40% of their time entering data. They needed a tool that anticipated their needs and flagged critical patient risks before they became emergencies.",
-      solution: "We designed a predictive UI. The system learns the doctor's workflow and pre-fetches relevant history. Critical alerts use color psychology to demand attention without inciting panic.",
-      gallery: ["/images/portfolio/portfolio-05.jpg", "/images/portfolio/portfolio-06.jpg", "/images/portfolio/portfolio-04.jpg"]
-    },
-    {
-      id: 6,
-      title: "ECHO ACOUSTICS",
-      category: "Audio Brand",
-      image: "/images/portfolio/case-echo.svg",
-      description: "Sonic branding and visual identity for a high-fidelity audio manufacturer.",
-      stats: "Global Launch",
-      client: "Echo SoundLabs",
+      id: "lmneez",
+      title: "LMNEEZ BEVERAGES",
+      category: "FMCG / Brand Build",
+      image: "/images/portfolio/Lmneez.png",
+      description: "A sensory-driven digital experience for a premium lemon-based natural beverage line.",
+      stats: "Global Reach",
+      client: "Sreydha Foods",
       year: "2024",
-      location: "Tokyo, Japan",
-      services: ["Branding", "Web Design", "Sound Design"],
-      challenge: "How do you visualize sound? Echo needed a website that translated their audiophile-grade quality into a visual medium for a global digital launch.",
-      solution: "We used cymatics—the study of visible sound—to generate the visual identity. The website vibrates and pulses with the user's interaction, creating a synesthetic experience where you can 'see' the bass.",
-      gallery: ["/images/portfolio/portfolio-06.jpg", "/images/portfolio/portfolio-04.jpg", "/images/portfolio/portfolio-05.jpg"]
+      location: "New Delhi, India",
+      services: ["Digital Identity", "Interactive Story", "FMCG Strategy"],
+      details: [
+        "The Lmneez digital identity is built on the concept of 'Organic Clarity.' We utilized a bespoke physics-based motion system that mimics the fluidity and refreshment of the product, resulting in a unique sensory-to-digital translation.",
+        "The interactive storytelling component focuses on the purity of the source. By utilizing high-fidelity macro-cinematography and a vibrant color orchestration, we established an immediate emotional connection with health-conscious protagonists.",
+        "The architecture was designed to facilitate rapid distributor acquisition. We created a 'Protocol-Clean' data section that allows B2B partners to access technical specification and logistics data with unrivaled ease and professionalism.",
+        "Since launch, Lmneez has expanded its global reach significantly. The platform serves as a primary tool for brand consistency across diverse international markets, proving the power of a unified, high-end digital identity."
+      ],
+      iconSet: "FMCG",
+      liveLink: "https://www.sreydhafoods.com/"
+    },
+    {
+      id: "finsathi",
+      title: "FINSATHI SOLUTIONS",
+      category: "Fintech Compliance",
+      image: "/images/portfolio/FINsathi.png",
+      description: "Modernizing financial compliance through a streamlined, AI-assisted legal technology platform.",
+      stats: "99.9% Accuracy Rate",
+      client: "FINsathi Corp",
+      year: "2024",
+      location: "Mumbai, India",
+      services: ["System Design", "Compliance UX", "Fullstack Dev"],
+      details: [
+        "FINsathi was designed to eliminate the inherent anxiety of financial compliance. We replaced opaque legal jargon with a clean, 'Tabular-Logic' UI that guides users through complex regulatory requirements with industrial precision.",
+        "The core innovation lies in the AI-assisted legal checklist. This dynamic protocol interprets regulatory shifts in real-time, ensuring that clients are always operating within the latest legal frameworks without manual overhead.",
+        "Audit-readiness was elevated through a 'Real-Time Monitoring' dashboard. By maintaining a continuous audit log with 99.9% accuracy, we removed the need for traditional, high-stress end-of-year reporting cycles.",
+        "By implementing this protocol-driven navigational hierarchy, we transformed compliance from a cost center into a strategic advantage. FINsathi is now the primary legal-tech engine for Mumbai's most proactive finance firms."
+      ],
+      iconSet: "Fintech",
+      liveLink: "https://www.finsathi.com/"
+    },
+    {
+      id: "visual-identity",
+      title: "BRAND ARCHITECTURE",
+      category: "Creative Direction",
+      image: "/images/portfolio/graphic-design-portfolio.png",
+      description: "A comprehensive showcase of sovereign visual identities designed for industry protagonists.",
+      stats: "Award Winning",
+      client: "Various Elite Clients",
+      year: "2024-2025",
+      location: "International",
+      services: ["Visual Identity", "Typography Design", "Art Direction"],
+      details: [
+        "Our 'Brand Architecture' project is an archival study in visual reduction. Each identity in this selection is built on a custom typographic foundation that projects an unrivaled sense of technical permanence and authority.",
+        "The project challenge was to maintain a consistent 'Studio-Premium' thread while allowing each client's unique protagonist energy to shine. We achieved this through a unified 'Design Protocol' that governs whitespace and grid use.",
+        "Each case study within this archive demonstrates the power of absolute visual economy. We focus on the distillation of a brand to its core components, ensuring that every visual asset serves as a high-impact strategic tool.",
+        "This selection has received multiple awards for its commitment to minimal excellence. It remains a testament to our philosophy that luxury is not the addition of elements, but the removal of every non-essential friction."
+      ],
+      iconSet: "Identity",
+      liveLink: "https://drive.google.com/file/d/10VGPHV0FHLVV76H3SyXuWlFg6aQnjELu/view?usp=sharing"
     }
   ];
+
 
 export const CryptoData: { name: string; price: number }[] = [
   { name: "Bitcoin BTC/USD", price: 67646.84 },
