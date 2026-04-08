@@ -101,7 +101,7 @@ export const portfolioData: {
       link: "https://www.finsathi.com/",
     },
     {
-      id: "FicLance",
+      id: "ficlance",
       image: "/images/portfolio/ficlance.png",
       title: "Ficlance – AI-Powered Client Simulation Platform",
       category: "EdTech / AI Learning Platform / Freelancing Skill Development",
@@ -109,7 +109,7 @@ export const portfolioData: {
       link: "https://www.ficlance.com/",
     },
     {
-      id: "Portfolio",
+      id: "portfolio",
       image: "/images/portfolio/Portfolio.png",
       title: "Graphic Designer & Framer Developer Portfolio",
       category: "Personal Portfolio / UI-UX Design / Web Development",
@@ -117,7 +117,7 @@ export const portfolioData: {
       link: "https://sutharharsh.framer.website/",
     },
     {
-      id: "Safar",
+      id: "safar",
       image: "/images/portfolio/safar.png",
       title: "Safar – Travel & Tour Booking Platform",
       category: "Travel & Tourism / Tour Booking / Travel Services",
@@ -131,6 +131,13 @@ export const portfolioData: {
       category: "Graphic Design / Creative Direction",
       year: "2024-2025",
       link: "https://drive.google.com/file/d/10VGPHV0FHLVV76H3SyXuWlFg6aQnjELu/view?usp=sharing",
+    },
+    {
+      id: "zerotoprod-ai",
+      image: "/images/portfolio/zerotoprodai.jpeg",
+      title: "ZeroToProd.ai - Voice-to-Product Generation System",
+      category: "AI Product Engine / Local-First Development / Rapid Prototyping",
+      year: "2026",
     },
   ];
 
@@ -379,7 +386,7 @@ export const caseStudiesData: {
       id: "visual-identity",
       title: "BRAND ARCHITECTURE",
       category: "Creative Direction",
-      image: "/images/portfolio/graphic-design-portfolio.png",
+      image: "/images/portfolio/portfolio2.png",
       description: "A comprehensive showcase of sovereign visual identities designed for industry protagonists.",
       stats: "Award Winning",
       client: "Various Elite Clients",
@@ -394,6 +401,85 @@ export const caseStudiesData: {
       ],
       iconSet: "Identity",
       liveLink: "https://drive.google.com/file/d/10VGPHV0FHLVV76H3SyXuWlFg6aQnjELu/view?usp=sharing"
+    },
+    {
+      id: "ficlance",
+      title: "FICLANCE PLATFORM",
+      category: "EdTech / AI Simulation",
+      image: "/images/portfolio/ficlance.png",
+      description: "An AI-powered simulation platform that helps learners practice real freelance workflows and build proof-based portfolios.",
+      stats: "Beta Access Live",
+      client: "Ficlance",
+      year: "2025",
+      location: "India (Remote-First)",
+      services: ["Product Strategy", "Learning UX", "AI Workflow Design"],
+      details: [
+        "Ficlance was designed to close the gap between learning and employability by recreating realistic client project environments. Each simulation mirrors real briefs, timelines, and revision cycles so users develop professional execution habits.",
+        "We structured the product around progressive difficulty tiers, allowing users to move from beginner to advanced projects with measurable outcomes. This progression model supports confidence-building while maintaining practical industry relevance.",
+        "A portfolio-first architecture automatically converts completed simulations into shareable work proof, including context and feedback history. The result is a stronger signal of readiness for freelance and early-career opportunities.",
+        "The platform positions itself as a journey from learner to leader, combining guided practice, analytics, and repeatable workflows that make skill growth visible and credible."
+      ],
+      iconSet: "EdTech",
+      liveLink: "https://www.ficlance.com/"
+    },
+    {
+      id: "portfolio",
+      title: "GRAPHIC DESIGN PORTFOLIO",
+      category: "Personal Brand / Creative Showcase",
+      image: "/images/portfolio/Portfolio.png",
+      description: "A personal portfolio experience highlighting visual identity, UI design, and web development capabilities for global freelance opportunities.",
+      stats: "Multi-Discipline Showcase",
+      client: "Harsh Suthar",
+      year: "2025",
+      location: "Gandhinagar, India",
+      services: ["Portfolio Architecture", "Brand Storytelling", "Framer Development"],
+      details: [
+        "This portfolio is structured as a narrative-first showcase where design quality and project intent are presented with equal weight. It blends personal brand voice with service clarity to attract both creative and technical engagements.",
+        "The experience highlights selected work across graphic design, UI/UX, and web delivery while keeping the interaction flow lightweight and conversion-friendly. Each section supports credibility through process visibility and project evidence.",
+        "A clear service stack, workflow explanation, and contact pathways were integrated to reduce client friction and support faster decision-making. The architecture balances visual expression with business usefulness.",
+        "The final result functions as both a brand presence and a lead-generation asset, positioning the creator for freelance and collaborative opportunities across markets."
+      ],
+      iconSet: "Portfolio",
+      liveLink: "https://sutharharsh.framer.website/"
+    },
+    {
+      id: "safar",
+      title: "SAFAR ADVENTURE PLATFORM",
+      category: "TravelTech / Outdoor Navigation",
+      image: "/images/portfolio/safar.png",
+      description: "A travel and trekking platform focused on safer exploration through offline maps, guided routes, and community-driven destination discovery.",
+      stats: "Offline-First Experience",
+      client: "Safar",
+      year: "2025",
+      location: "India",
+      services: ["Product Experience", "Navigation UX", "Feature Strategy"],
+      details: [
+        "Safar was conceptualized as an outdoor guidance platform for users exploring unfamiliar routes and camp destinations. The core experience reduces uncertainty with route context, destination data, and activity planning.",
+        "An offline-first mapping layer was prioritized to keep functionality reliable in low-connectivity environments. This makes the platform practical for real trekking conditions where network access is inconsistent.",
+        "The product experience combines adventure scheduling, location expansion, and visual route communication to support both solo and group travel behavior. These features strengthen trip planning while improving in-field confidence.",
+        "By blending utility with aspirational travel storytelling, Safar creates a balanced experience that supports discovery, safety, and repeat usage for modern outdoor audiences."
+      ],
+      iconSet: "Travel",
+      liveLink: "https://safar-two.vercel.app/"
+    },
+    {
+      id: "zerotoprod-ai",
+      title: "ZEROTOPROD.AI SYSTEM",
+      category: "AI Product Infrastructure",
+      image: "/images/portfolio/zerotoprodai.jpeg",
+      description: "A local-first AI product generation engine that transforms spoken ideas into structured plans, technical artifacts, and execution-ready codebases.",
+      stats: "In Active Development",
+      client: "ZeroToProd.ai",
+      year: "2026",
+      location: "Remote-First",
+      services: ["Product Intelligence", "Architecture Automation", "Code Scaffolding"],
+      details: [
+        "ZeroToProd.ai was designed to remove the traditional delay between ideation and execution. The system ingests raw voice input and converts it into clean transcripts, planning artifacts, and technical documents that are immediately usable by builders.",
+        "At its core, the workflow orchestrates business analysis, competitor intelligence, and feature injection before producing structured outputs such as meeting notes, PRDs, SKILLS maps, and architecture files. This creates a repeatable path from unclear ideas to decision-ready product direction.",
+        "The platform uses a multi-stage AI pipeline with validation and repair loops to improve reliability across generated artifacts. Instead of relying on fragmented tools, users work inside one cohesive local-first workspace with minimal dependency overhead.",
+        "Built for solo founders, indie developers, and non-technical builders, ZeroToProd.ai acts as an automated product manager, researcher, and developer. The result is a faster transition from idea to implementation, with production scaffolding prepared for rapid iteration and deployment."
+      ],
+      iconSet: "EdTech"
     }
   ];
 

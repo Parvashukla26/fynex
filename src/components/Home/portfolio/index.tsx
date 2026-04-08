@@ -71,7 +71,7 @@ const Portfolio = () => {
                                 className={`relative group w-full ${!isEven ? 'md:pl-[10%]' : 'md:pr-[10%]'}`}
                             >
                                 <Link
-                                    href={`/case-studies/${item.id}`}
+                                    href={`/case-studies/${item.id.toLowerCase()}`}
                                     className='block'
                                 >
                                     <div className='grid grid-cols-1 lg:grid-cols-12 gap-12 items-center'>
@@ -108,10 +108,15 @@ const Portfolio = () => {
                                                 >
                                                     {item.title}
                                                 </h4>
-                                                <div className='flex items-center gap-8 text-white/20 font-mono text-[10px] uppercase tracking-widest'>
+                                                <div className='flex flex-wrap items-center gap-4 md:gap-8 text-white/20 font-mono text-[10px] uppercase tracking-widest'>
                                                     <span>[{item.year}]</span>
                                                     <div className='w-8 h-[1px] bg-current'></div>
                                                     <span className='group-hover:text-primary transition-colors'>Dossier // Analyse</span>
+                                                    {!item.link && (
+                                                        <span className='inline-flex items-center rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-primary'>
+                                                            In Development
+                                                        </span>
+                                                    )}
                                                 </div>
                                             </div>
                                         </div>

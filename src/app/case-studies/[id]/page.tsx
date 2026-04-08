@@ -6,6 +6,13 @@ import CaseDetailNext from '@/components/CaseStudies/Detail/CaseDetailNext'
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 
+const normalizeId = (value: string) => value.trim().toLowerCase()
+
+const findCaseStudyById = (id: string) => {
+    const normalizedId = normalizeId(id)
+    return caseStudiesData.find((study) => normalizeId(study.id) === normalizedId)
+}
+
 export async function generateStaticParams() {
     return caseStudiesData.map((study) => ({
         id: study.id,
@@ -14,7 +21,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
     const { id } = await params
-    const study = caseStudiesData.find((p) => p.id === id)
+    const study = findCaseStudyById(id)
     if (!study) return { title: 'Case Study Not Found' }
 
     return {
@@ -30,7 +37,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
 
 export default async function CaseStudyDetailPage({ params }: { params: Promise<{ id: string }> }) {
     const { id } = await params
-    const study = caseStudiesData.find((p) => p.id === id)
+    const study = findCaseStudyById(id)
 
     if (!study) {
         notFound()

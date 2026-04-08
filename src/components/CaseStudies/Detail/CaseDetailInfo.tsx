@@ -66,9 +66,9 @@ const CaseDetailInfo: React.FC<CaseDetailInfoProps> = ({ client, year, location,
                         </motion.div>
                     </div>
 
-                    {/* Integrated Live Link Anchor */}
-                    {liveLink && (
-                        <div className='lg:col-span-2 flex lg:justify-end'>
+                    {/* Integrated Live Link Anchor / In Development Tag */}
+                    <div className='lg:col-span-2 flex lg:justify-end'>
+                        {liveLink ? (
                             <motion.a
                                 href={liveLink}
                                 target='_blank'
@@ -81,8 +81,17 @@ const CaseDetailInfo: React.FC<CaseDetailInfoProps> = ({ client, year, location,
                                 <span>LIVE_SITE</span>
                                 <ArrowUpRight size={14} className='group-hover:rotate-45 transition-transform duration-500' />
                             </motion.a>
-                        </div>
-                    )}
+                        ) : (
+                            <motion.div
+                                initial={{ opacity: 0 }}
+                                whileInView={{ opacity: 1 }}
+                                viewport={{ once: true }}
+                                className='inline-flex items-center rounded-full border border-primary/40 bg-primary/10 px-5 py-3 text-primary text-[10px] font-black uppercase tracking-[0.4em]'
+                            >
+                                In Development
+                            </motion.div>
+                        )}
+                    </div>
                 </div>
             </div>
         </section>
